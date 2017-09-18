@@ -39,7 +39,6 @@ resource "aws_subnet" "public_subnet_ap_south_1a" {
   vpc_id                  = "${aws_vpc.vpc_tuto.id}"
   cidr_block              = "10.0.1.0/24"
   map_public_ip_on_launch = true
-# availability_zone = "ap-south-1a"
   availability_zone = "us-east-1a"
   tags = {
   	Name =  "Subnet public az 1a"
@@ -49,7 +48,6 @@ resource "aws_subnet" "public_subnet_ap_south_1a" {
 resource "aws_subnet" "private_1_subnet_ap_south_1b" {
   vpc_id                  = "${aws_vpc.vpc_tuto.id}"
   cidr_block              = "10.0.2.0/24"
-  #availability_zone = "ap-south-1b"
   availability_zone = "us-east-1b"
   tags = {
   	Name =  "Subnet private 1 az 1b"
